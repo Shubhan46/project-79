@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<title>Pizerria</title>
+
+<link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative&display=swap" rel="stylesheet"> 
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="main.js"></script>
+
+    </head>
+    <body background="pizza.jpg">
+        <section id="home">
+            
+        <nav class="navbar-inverse">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Pizerria</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="links"><a href="#home">View menu</a></li>
+                    <li class="links"><a href="#add">Add menu</a></li>
+                </ul>
+            </div>
+        </nav>
+       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+       <br><br><br><br><br><br><br>
+        <div class="menu_div">
+            <button class="menu_list" onclick="getmenu()">Show menu</button>
+        </div>
+    </section>
+    <section id="add" background="ingredients.jpg">
+        <div class="display_menu"></div>
+     <input type="text" id="pizza_recipie" placeholder="Enter the name of the recipe you want to have extra">
+     <br>
+     <button class="new_menu" onclick="addmenu()">Recommend a new pizza</button>
+     <span><div class="addeed_menu"></div></span>
+    </section>
+    </body>
+</html>
